@@ -8,6 +8,7 @@ class Hotel{
     public function __construct($nom,$adresse){
         $this->_nom=$nom;
         $this->_adresse=$adresse;
+        //creation des listes
         $this->_listeReservation=[];
         $this->_listeChambre=[];
     }
@@ -19,7 +20,7 @@ class Hotel{
         return $this->_adresse;
     }
 
-
+// ajout d une chambre dans chambre
     public function AddChambre(){
         $this->_listeChambre[]= $chambre;
     }
@@ -42,13 +43,14 @@ class Hotel{
         }
         return $result;
     }
+    //permet de compter le nomnbre de reservations et de chambre dispo
     public function countReservations(){
         return count($this->_listeReservation);
     }    
     public function countChambres(){
         return count($this->_listeChambre);
     }
-    
+
 }
 
 ?>
