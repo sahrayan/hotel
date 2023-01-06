@@ -1,5 +1,5 @@
 <?php
-
+//classe du client juste nom prenom
 class client{
     private $_nom;
     private $_prenom;
