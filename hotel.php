@@ -18,20 +18,31 @@ class Hotel{
     public function GetAdresse(){
         return $this->_adresse;
     }
-    public function AddReservation($reservation){
+
+
+    public function AddChambre(){
+        $this->_listeChambre[]= $chambre;
+    }
+    public function AddReservation(){
+        $this->_listeReservation[]= $reservation;
+    }
+
+    
+    public function dispReservation($reservation){
         $result=$this;
         foreach ($this->_listeReservation as $reservation){
             $result.=$reservation ."<br>";
         }
         return $result;
     }
-    public function AddChambre($chambre){
+    public function dispChambre($chambre){
         $result=$this;
         foreach ($this->_listeChambre as $chambre){
             $result.=$chambre."<br>";
         }
         return $result;
     }
+
 }
 
 ?>
