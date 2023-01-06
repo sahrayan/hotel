@@ -27,7 +27,7 @@ class Hotel{
         $this->_listeReservation[]= $reservation;
     }
 
-    
+
     public function dispReservation($reservation){
         $result=$this;
         foreach ($this->_listeReservation as $reservation){
@@ -42,7 +42,13 @@ class Hotel{
         }
         return $result;
     }
-
+    public function countReservations(){
+        return count($this->_listeReservation);
+    }    
+    public function countChambres(){
+        return count($this->_listeChambre);
+    }
+    
 }
 
 ?>
