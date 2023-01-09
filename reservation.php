@@ -21,6 +21,7 @@ class Reservation{
     public function getSortie(){
         return $this->_sortie;
     }
+    // reservation info client
     public function getInfoReservations(){
         return "Hotel : ".$this->_hotel."".$this->_chambre."Du ".$this->getEntree()->format("d/m/y")." au ".$this->getSortie()->format("d/m/y").".";
     }
