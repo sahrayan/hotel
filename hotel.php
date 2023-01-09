@@ -48,10 +48,10 @@ class Hotel{
         return count($this->_listeReservation);
     }    
     public function countChambres(){
-        return count($this->_listeChambre);
+        return "il y a ".count($this->_listeChambre)." chambres.";
     }
     public function getInfo(){
-        return $this->GetNom()."<br> ".$this->GetAdresse()."<br> ";
+        return 'Hotel:  '.$this->GetNom()."<br> Adresse:  ".$this->GetAdresse()."<br> ";
     }
     public function __toString()
     {
