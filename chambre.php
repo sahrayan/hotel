@@ -9,12 +9,12 @@ class Chambre{
     private Hotel $_hotel;
     private array $_ListReservation;
 
-    public function __construct($chambre, $nombre, $prix, $wifi, $status,Hotel $hotel){
+    public function __construct($chambre, $nombre, $prix, $wifi, $verifstatus,Hotel $hotel){
      $this->_chambre = $chambre;
      $this->_nombre = $nombre;
      $this->_prix = $prix;
      $this->_wifi = $wifi;
-     $this->_status = $status;
+     $this->_status = $verifstatus;
      $this->_hotel = $hotel;
      $this->_hotel -> AddChambre($this);
      $this->_ListReservation =[];
@@ -36,6 +36,10 @@ class Chambre{
     }
     private function getStatus(){
         return $this->_status;
+    }
+    public function verfistatus(){
+
+
     }
     public function getInfoChambre(){
         return $this->getChambre()." ".$this ->getNombre()." ".$this->getPrix()." ".$this->getWifi()." ".$this->getStatus()."<br>";
