@@ -31,11 +31,11 @@ $reservation2 =new Reservation($client2,$hotel2,$chambre2,"28-12-2022","14-01-20
 
 
 
-// echo $client2->InfoClient();
 // echo $hotel2->getInfo();
- //echo $chambre3->getInfoChambre();
+// echo $chambre3->getInfoChambre();
 // echo $chambre2->getInfoChambre();
 // echo $reservation1->getInfoReservations();
-//echo $hotel1->countReservations();
+// echo $hotel1->countReservations();
 // echo $hotel1->countChambres();
-//  echo $hotel1->dispChambre();
+// echo $hotel1->dispChambre();
+ echo $client1->InfoClient();
