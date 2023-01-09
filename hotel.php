@@ -45,7 +45,7 @@ class Hotel{
     }
     //permet de compter le nomnbre de reservations et de chambre dispo
     public function countReservations(){
-        return count($this->_listeReservation);
+        return "il y a ".count($this->_listeReservation)." reserver<br>";
     }    
     public function countChambres(){
         return "il y a ".count($this->_listeChambre)." chambres.";
