@@ -14,12 +14,13 @@ class Chambre{
      $this->_nombre = $nombre;
      $this->_prix = $prix;
      $this->_wifi = $wifi;
-     $this->_status = $verifstatus;
+     $this->_status = 'Libre';
      $this->_hotel = $hotel;
      $this->_hotel -> AddChambre($this);
      $this->_ListReservation =[];
     }
     public function AddReservation($reservation){
+        $this->_status = 'Occuper';
         $this->_ListReservation[] = $reservation;
     }
     private function getChambre(){
