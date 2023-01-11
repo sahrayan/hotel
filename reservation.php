@@ -23,7 +23,23 @@ class Reservation{
     }
     // reservation info client
     public function getInfoReservations(){
-        return "Hotel : ".$this->_hotel."".$this->_chambre."Du ".$this->getEntree()->format("d/m/y")." au ".$this->getSortie()->format("d/m/y").".";
+        echo "Statuts :" .$this;
+        $result= "<table border=10>
+        <thead>
+        <tr>
+        <th>Chambre</th>
+        <th>Hotel</th>
+        
+        </tr>
+        </thead><tbody>";
+        foreach($this->_chambre as $chambre){
+            $result .= "<tr>
+            <td>$chambre</td>
+            <td>$Hotel</td>
+            </tr>";
+        }
+        $result .= "</tbody></table>";
+        echo $result;
     }
     public function __toString()
     {
