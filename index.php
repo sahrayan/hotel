@@ -38,4 +38,5 @@ $reservation2 =new Reservation($client2,$hotel2,$chambre2,"28-12-2022","14-01-20
 // echo $hotel1->countReservations();
 // echo $hotel1->countChambres();
 // echo $hotel1->dispChambre();
- echo $client1->InfoClient();
+//echo $client1->InfoClient();
+echo $reservation1->getInfoReservations();
