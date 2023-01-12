@@ -1,14 +1,19 @@
 /*reservation couleur*/
 
-.couleurVert{
-    color: white;
-    width: auto;
-    height: 40px;
-    background-color: green;
+.rectangle
+{
+color:white;  
+Width :10 px;
+Height:35px;
+Background-color: green;
+
 }
-.couleurRouge{
-    color: white;
-    width: auto;
-    height: 40px;
-    background-color: red;
+
+.rectangle2
+{
+color:white;  
+Width :10 px;
+Height:35px;
+Background-color: red;
+
 }
