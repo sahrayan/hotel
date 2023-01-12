@@ -20,22 +20,22 @@ class Chambre{
      $this->_ListReservation =[];
     }
     public function AddReservation($reservation){
-        $this->_status = 'Occuper';
+        $this->_status = 'Réservée';
         $this->_ListReservation[] = $reservation;
     }
-    private function getChambre(){
+    public function getChambre(){
         return $this->_chambre;
     }
-    private function getNombre(){
+    public function getNombre(){
         return $this->_nombre;
     }
-    private function getPrix(){
+    public function getPrix(){
         return $this->_prix;
     }
-    private function getWifi(){
+    public function getWifi(){
         return $this->_wifi;
     }
-    private function getStatus(){
+    public function getStatus(){
         return $this->_status;
     }
     public function verfistatus(){
@@ -43,7 +43,7 @@ class Chambre{
 
     }
     public function getInfoChambre(){
-        return $this->getChambre()." ".$this ->getNombre()." ".$this->getPrix()." ".$this->getWifi()." ".$this->getStatus()."<br>";
+        return $this->getChambre()." ".$this ->getNombre()." ".$this->getPrix()." ".$this->getWifi()." ".$this->_status."<br>";
     }
     public function __toString()
     {
