@@ -19,16 +19,16 @@ class Client{
     public function getPrenom(){
         return $this->_prenom;
     }
+    public function InfoClient(){
+       $disp ="<br> Le client ".$this->getNom()." ".$this->getPrenom(). " a reservé :";
+       foreach($this->_ListReservation as $reservation){
+           $disp.= $reservation;
+       }
+       return $disp;
+    }
     public function __toString()
     {
-        return $this->getNom()." ".$this->getPrenom();
+        return $this->InfoClient();
     }
 
-    public function InfoClient(){
-       echo $this;
-       foreach($this->_ListReservation as $reservation){
-           echo $reservation;
-       }
-       
-    }
 }
